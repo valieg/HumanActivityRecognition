@@ -5,7 +5,7 @@ This document describes the variables, the data and the works performed to clean
 ### 1. The rough data directory structure
 
 Downloading the data from the given URL([https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)) we'll get the "UCI HAR Dataset.zip" file. Unpacking this file we get the following files(and directories structure):
->
+```
 ├── UCI HAR Dataset
 │   ├── test
 │   │   ├── Inertial Signals
@@ -39,7 +39,7 @@ Downloading the data from the given URL([https://d396qusza40orc.cloudfront.net/g
 │   ├── features_info.txt
 │   ├── features.txt
 │   └── README.txt
-
+```
 Notice the similarity between "/test/..." and "/train/..." files and directories structures. This helped us to write a more "compact" code.
 
 ### 2. The 'UCI HAR Dataset' directory files
@@ -156,7 +156,7 @@ The new 'root' directory for the data sets is called "data". The sensor signals 
 sub-directory.
 
 The data directory is:
->
+```
 ├── data
 │   ├── SensorSignals
 │   │   ├── body_acc_x.csv
@@ -178,7 +178,7 @@ The data directory is:
 ├── helpers.R
 ├── README.md
 └── run_analysis.R
-
+```
 #### 6.0 How we get the TIDY data sets?
 
 For all files we used the same process:
